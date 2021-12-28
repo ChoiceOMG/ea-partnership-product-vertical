@@ -1,0 +1,435 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Baseline Architecture</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Baseline Architecture</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-59b260197af840fc9098150f47168fd7.png" alt="Baseline Architecture" usemap="#id-59b260197af840fc9098150f47168fd7map"/>
+			   <map name="id-59b260197af840fc9098150f47168fd7map">
+				  		<area shape="rect" coords="758,166,910,221" href="../elements/id-26f287c704104d1b975cdd9c87e98ee9.html"  target="element">
+				  		<area shape="rect" coords="982,370,1134,429" href="../elements/id-090ca9f0c10642cb9ef673dd271c8bbd.html"  target="element">
+				  		<area shape="rect" coords="909,238,1029,293" href="../elements/id-268922ab55a2487980c36a48f0b7a570.html"  target="element">
+				  		<area shape="rect" coords="274,586,394,641" href="../elements/id-04c45cbefafa4cfbb8a12f909406ba56.html"  target="element">
+				  		<area shape="rect" coords="322,298,467,359" href="../elements/id-11871d0c35e0496dba4924afee74bc51.html"  target="element">
+				  		<area shape="rect" coords="790,526,910,581" href="../elements/id-383b556385594eb3bf5c4ac302c754cd.html"  target="element">
+				  		<area shape="rect" coords="610,568,730,623" href="../elements/id-75ff5b6c0fb3496a89db43ff716c6b42.html"  target="element">
+				  		<area shape="rect" coords="718,346,863,407" href="../elements/id-acf281b59fcc441ebfea017b852bf2b2.html"  target="element">
+				  		<area shape="rect" coords="622,478,767,551" href="../elements/id-3b14251259d34c599ea41002efe2fa34.html"  target="element">
+				  		<area shape="rect" coords="574,178,694,233" href="../elements/id-4a52caf2a6c640cc93aeba597353e308.html"  target="element">
+				  		<area shape="rect" coords="250,418,370,473" href="../elements/id-69f38db37a164e1da6b489d4ce96e178.html"  target="element">
+				  		<area shape="rect" coords="418,514,538,569" href="../elements/id-46ff15731ce2458d8afac3b3790b63fa.html"  target="element">
+				  		<area shape="rect" coords="250,178,370,233" href="../elements/id-04b12e174f4848aaa5ca0e51ed794d45.html"  target="element">
+				  		<area shape="rect" coords="166,514,286,569" href="../elements/id-efdd1e65fed94ddeb054e141111c57b8.html"  target="element">
+				  		<area shape="rect" coords="155,334,275,389" href="../elements/id-86753042cb3a410789dc5e1e2b34ad12.html"  target="element">
+				  		<area shape="rect" coords="82,418,202,473" href="../elements/id-88e7d94151f34017856d3766e0237376.html"  target="element">
+				  		<area shape="rect" coords="82,238,202,293" href="../elements/id-9b1d5e3f274046508feba3aa00dfb80c.html"  target="element">
+				  		<area shape="rect" coords="22,514,142,569" href="../elements/id-241c2c700d9447669ff0d27a9c419b08.html"  target="element">
+				  		<area shape="rect" coords="10,334,130,389" href="../elements/id-560289391387407590ea42b8a4401f47.html"  target="element">
+				  		<area shape="rect" coords="382,10,527,71" href="../elements/id-3be6909b00eb455c94016181bfb5322e.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-3be6909b00eb455c94016181bfb5322e.html" target="element"> Baseline Architecture </a> </td>
+											    <td> <a href="../elements/id-3be6909b00eb455c94016181bfb5322e.html" target="element" class="i18n-elementtype-Plateau">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-560289391387407590ea42b8a4401f47.html" target="element"> Audit Website </a> </td>
+											    <td> <a href="../elements/id-560289391387407590ea42b8a4401f47.html" target="element" class="i18n-elementtype-Capability">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-241c2c700d9447669ff0d27a9c419b08.html" target="element"> Frontend Development </a> </td>
+											    <td> <a href="../elements/id-241c2c700d9447669ff0d27a9c419b08.html" target="element" class="i18n-elementtype-Capability">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-9b1d5e3f274046508feba3aa00dfb80c.html" target="element"> SEO Service </a> </td>
+											    <td> <a href="../elements/id-9b1d5e3f274046508feba3aa00dfb80c.html" target="element" class="i18n-elementtype-BusinessService">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-88e7d94151f34017856d3766e0237376.html" target="element"> Web Designing Services </a> </td>
+											    <td> <a href="../elements/id-88e7d94151f34017856d3766e0237376.html" target="element" class="i18n-elementtype-BusinessService">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-86753042cb3a410789dc5e1e2b34ad12.html" target="element"> Content Writing </a> </td>
+											    <td> <a href="../elements/id-86753042cb3a410789dc5e1e2b34ad12.html" target="element" class="i18n-elementtype-Capability">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-efdd1e65fed94ddeb054e141111c57b8.html" target="element"> Backend Development </a> </td>
+											    <td> <a href="../elements/id-efdd1e65fed94ddeb054e141111c57b8.html" target="element" class="i18n-elementtype-Capability">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-04b12e174f4848aaa5ca0e51ed794d45.html" target="element"> Ongoing Product Support </a> </td>
+											    <td> <a href="../elements/id-04b12e174f4848aaa5ca0e51ed794d45.html" target="element" class="i18n-elementtype-BusinessService">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-46ff15731ce2458d8afac3b3790b63fa.html" target="element"> Graphic Designing Service </a> </td>
+											    <td> <a href="../elements/id-46ff15731ce2458d8afac3b3790b63fa.html" target="element" class="i18n-elementtype-BusinessService">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-69f38db37a164e1da6b489d4ce96e178.html" target="element"> Data Engineering </a> </td>
+											    <td> <a href="../elements/id-69f38db37a164e1da6b489d4ce96e178.html" target="element" class="i18n-elementtype-Capability">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-4a52caf2a6c640cc93aeba597353e308.html" target="element"> Digital Marketing Service </a> </td>
+											    <td> <a href="../elements/id-4a52caf2a6c640cc93aeba597353e308.html" target="element" class="i18n-elementtype-BusinessService">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-3b14251259d34c599ea41002efe2fa34.html" target="element"> Google/FB/Bing Campaign Management Retainer Service </a> </td>
+											    <td> <a href="../elements/id-3b14251259d34c599ea41002efe2fa34.html" target="element" class="i18n-elementtype-BusinessService">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-acf281b59fcc441ebfea017b852bf2b2.html" target="element"> Marketing Strategy Consultation </a> </td>
+											    <td> <a href="../elements/id-acf281b59fcc441ebfea017b852bf2b2.html" target="element" class="i18n-elementtype-BusinessService">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-75ff5b6c0fb3496a89db43ff716c6b42.html" target="element"> FB/Google/Bing Management </a> </td>
+											    <td> <a href="../elements/id-75ff5b6c0fb3496a89db43ff716c6b42.html" target="element" class="i18n-elementtype-Capability">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-383b556385594eb3bf5c4ac302c754cd.html" target="element"> Marketing Strategy </a> </td>
+											    <td> <a href="../elements/id-383b556385594eb3bf5c4ac302c754cd.html" target="element" class="i18n-elementtype-Capability">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-11871d0c35e0496dba4924afee74bc51.html" target="element"> Creative Writing </a> </td>
+											    <td> <a href="../elements/id-11871d0c35e0496dba4924afee74bc51.html" target="element" class="i18n-elementtype-BusinessService">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-04c45cbefafa4cfbb8a12f909406ba56.html" target="element"> Graphic Designing </a> </td>
+											    <td> <a href="../elements/id-04c45cbefafa4cfbb8a12f909406ba56.html" target="element" class="i18n-elementtype-Capability">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-268922ab55a2487980c36a48f0b7a570.html" target="element"> Signage </a> </td>
+											    <td> <a href="../elements/id-268922ab55a2487980c36a48f0b7a570.html" target="element" class="i18n-elementtype-BusinessService">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-090ca9f0c10642cb9ef673dd271c8bbd.html" target="element"> Outsourced Production </a> </td>
+											    <td> <a href="../elements/id-090ca9f0c10642cb9ef673dd271c8bbd.html" target="element" class="i18n-elementtype-Facility">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-26f287c704104d1b975cdd9c87e98ee9.html" target="element"> Free Toolings - Chat, Hosting and Reportings </a> </td>
+											    <td> <a href="../elements/id-26f287c704104d1b975cdd9c87e98ee9.html" target="element" class="i18n-elementtype-Value">
+											    </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-2ecd8948ed2a4945ade80341032266fb.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-2ecd8948ed2a4945ade80341032266fb.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3be6909b00eb455c94016181bfb5322e.html" target="element"> Baseline Architecture </a> </td>
+																		<td> <a href="../elements/id-9b1d5e3f274046508feba3aa00dfb80c.html" target="element"> SEO Service </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-b352ba78882240eca17ab2f8519d6cbe.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-b352ba78882240eca17ab2f8519d6cbe.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3be6909b00eb455c94016181bfb5322e.html" target="element"> Baseline Architecture </a> </td>
+																		<td> <a href="../elements/id-04b12e174f4848aaa5ca0e51ed794d45.html" target="element"> Ongoing Product Support </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-8a40c7aed53845dea831663089b76847.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-8a40c7aed53845dea831663089b76847.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3be6909b00eb455c94016181bfb5322e.html" target="element"> Baseline Architecture </a> </td>
+																		<td> <a href="../elements/id-11871d0c35e0496dba4924afee74bc51.html" target="element"> Creative Writing </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-9da30877043f4d3eb9110f2c3b195fe1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-9da30877043f4d3eb9110f2c3b195fe1.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3be6909b00eb455c94016181bfb5322e.html" target="element"> Baseline Architecture </a> </td>
+																		<td> <a href="../elements/id-4a52caf2a6c640cc93aeba597353e308.html" target="element"> Digital Marketing Service </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-c5252a869ba9417ebfb82cc84094097a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-c5252a869ba9417ebfb82cc84094097a.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3be6909b00eb455c94016181bfb5322e.html" target="element"> Baseline Architecture </a> </td>
+																		<td> <a href="../elements/id-88e7d94151f34017856d3766e0237376.html" target="element"> Web Designing Services </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-8cb502aae10a46bba67ea40336794579.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-8cb502aae10a46bba67ea40336794579.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3be6909b00eb455c94016181bfb5322e.html" target="element"> Baseline Architecture </a> </td>
+																		<td> <a href="../elements/id-46ff15731ce2458d8afac3b3790b63fa.html" target="element"> Graphic Designing Service </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-91925a15e86640be9d4d463251097650.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-91925a15e86640be9d4d463251097650.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3be6909b00eb455c94016181bfb5322e.html" target="element"> Baseline Architecture </a> </td>
+																		<td> <a href="../elements/id-3b14251259d34c599ea41002efe2fa34.html" target="element"> Google/FB/Bing Campaign Management Retainer Service </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-39f4382a7ba94826bf24371db8780c59.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-39f4382a7ba94826bf24371db8780c59.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3be6909b00eb455c94016181bfb5322e.html" target="element"> Baseline Architecture </a> </td>
+																		<td> <a href="../elements/id-acf281b59fcc441ebfea017b852bf2b2.html" target="element"> Marketing Strategy Consultation </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-b0a2edf3341e4aa38c95a59becee2590.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-b0a2edf3341e4aa38c95a59becee2590.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3be6909b00eb455c94016181bfb5322e.html" target="element"> Baseline Architecture </a> </td>
+																		<td> <a href="../elements/id-268922ab55a2487980c36a48f0b7a570.html" target="element"> Signage </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-b7c03b288de14335adb463f516e84494.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-b7c03b288de14335adb463f516e84494.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-9b1d5e3f274046508feba3aa00dfb80c.html" target="element"> SEO Service </a> </td>
+																		<td> <a href="../elements/id-560289391387407590ea42b8a4401f47.html" target="element"> Audit Website </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-b982e79c35154580a1b41298f1a5872d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-b982e79c35154580a1b41298f1a5872d.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-9b1d5e3f274046508feba3aa00dfb80c.html" target="element"> SEO Service </a> </td>
+																		<td> <a href="../elements/id-86753042cb3a410789dc5e1e2b34ad12.html" target="element"> Content Writing </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-d20552f11f904243832927bfb17a7bd7.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d20552f11f904243832927bfb17a7bd7.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-88e7d94151f34017856d3766e0237376.html" target="element"> Web Designing Services </a> </td>
+																		<td> <a href="../elements/id-241c2c700d9447669ff0d27a9c419b08.html" target="element"> Frontend Development </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-50c3c6d11be94a8b851874e237ee2334.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-50c3c6d11be94a8b851874e237ee2334.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-88e7d94151f34017856d3766e0237376.html" target="element"> Web Designing Services </a> </td>
+																		<td> <a href="../elements/id-efdd1e65fed94ddeb054e141111c57b8.html" target="element"> Backend Development </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-7eb4d4348d2c4331a58a2f86d82d39e1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-7eb4d4348d2c4331a58a2f86d82d39e1.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-88e7d94151f34017856d3766e0237376.html" target="element"> Web Designing Services </a> </td>
+																		<td> <a href="../elements/id-69f38db37a164e1da6b489d4ce96e178.html" target="element"> Data Engineering </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-4cd769f711d04d33ae507ef48d9c32a1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-4cd769f711d04d33ae507ef48d9c32a1.html" target="element" class="i18n-elementtype-ServingRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-46ff15731ce2458d8afac3b3790b63fa.html" target="element"> Graphic Designing Service </a> </td>
+																		<td> <a href="../elements/id-88e7d94151f34017856d3766e0237376.html" target="element"> Web Designing Services </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-05652cd346d449408ef7918acb776ae6.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-05652cd346d449408ef7918acb776ae6.html" target="element" class="i18n-elementtype-ServingRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-46ff15731ce2458d8afac3b3790b63fa.html" target="element"> Graphic Designing Service </a> </td>
+																		<td> <a href="../elements/id-4a52caf2a6c640cc93aeba597353e308.html" target="element"> Digital Marketing Service </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-c3fe8f38dfd448dc928756b1f5b87e2d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-c3fe8f38dfd448dc928756b1f5b87e2d.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-46ff15731ce2458d8afac3b3790b63fa.html" target="element"> Graphic Designing Service </a> </td>
+																		<td> <a href="../elements/id-04c45cbefafa4cfbb8a12f909406ba56.html" target="element"> Graphic Designing </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-c55704ba517b47b3867bc846acd9db8d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-c55704ba517b47b3867bc846acd9db8d.html" target="element" class="i18n-elementtype-ServingRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-46ff15731ce2458d8afac3b3790b63fa.html" target="element"> Graphic Designing Service </a> </td>
+																		<td> <a href="../elements/id-268922ab55a2487980c36a48f0b7a570.html" target="element"> Signage </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-b45817a004274e5bb63634a6b24aebca.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-b45817a004274e5bb63634a6b24aebca.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-4a52caf2a6c640cc93aeba597353e308.html" target="element"> Digital Marketing Service </a> </td>
+																		<td> <a href="../elements/id-26f287c704104d1b975cdd9c87e98ee9.html" target="element"> Free Toolings - Chat, Hosting and Reportings </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-2cc75cada8e941b2be2ef3b3b4c75ccb.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-2cc75cada8e941b2be2ef3b3b4c75ccb.html" target="element" class="i18n-elementtype-ServingRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3b14251259d34c599ea41002efe2fa34.html" target="element"> Google/FB/Bing Campaign Management Retainer Service </a> </td>
+																		<td> <a href="../elements/id-4a52caf2a6c640cc93aeba597353e308.html" target="element"> Digital Marketing Service </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-dd5078bffdca4c7d96a12d8300b9fcf2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-dd5078bffdca4c7d96a12d8300b9fcf2.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3b14251259d34c599ea41002efe2fa34.html" target="element"> Google/FB/Bing Campaign Management Retainer Service </a> </td>
+																		<td> <a href="../elements/id-75ff5b6c0fb3496a89db43ff716c6b42.html" target="element"> FB/Google/Bing Management </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-2215449d76cd45a596c4ae6987446f7b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-2215449d76cd45a596c4ae6987446f7b.html" target="element" class="i18n-elementtype-ServingRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-acf281b59fcc441ebfea017b852bf2b2.html" target="element"> Marketing Strategy Consultation </a> </td>
+																		<td> <a href="../elements/id-4a52caf2a6c640cc93aeba597353e308.html" target="element"> Digital Marketing Service </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-6773c2fac6234b3aad1de7475e0aafee.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6773c2fac6234b3aad1de7475e0aafee.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-acf281b59fcc441ebfea017b852bf2b2.html" target="element"> Marketing Strategy Consultation </a> </td>
+																		<td> <a href="../elements/id-383b556385594eb3bf5c4ac302c754cd.html" target="element"> Marketing Strategy </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-2996fa08a24a41d98ca3e524540d00f8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-2996fa08a24a41d98ca3e524540d00f8.html" target="element" class="i18n-elementtype-ServingRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-11871d0c35e0496dba4924afee74bc51.html" target="element"> Creative Writing </a> </td>
+																		<td> <a href="../elements/id-4a52caf2a6c640cc93aeba597353e308.html" target="element"> Digital Marketing Service </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-35fd6df2365c46d4bc7831c72b9a7166.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-35fd6df2365c46d4bc7831c72b9a7166.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-11871d0c35e0496dba4924afee74bc51.html" target="element"> Creative Writing </a> </td>
+																		<td> <a href="../elements/id-86753042cb3a410789dc5e1e2b34ad12.html" target="element"> Content Writing </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-329106ca808f4bc6a71b55b0cbdf09c1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-329106ca808f4bc6a71b55b0cbdf09c1.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-090ca9f0c10642cb9ef673dd271c8bbd.html" target="element"> Outsourced Production </a> </td>
+																		<td> <a href="../elements/id-268922ab55a2487980c36a48f0b7a570.html" target="element"> Signage </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
